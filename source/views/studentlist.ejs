@@ -1,0 +1,54 @@
+
+<div class="container-fluid mt-2">
+  <h1 class="text-center text-danger">Student List<br> 
+    <a href="/download"><button type="button" class="btn btn-danger">Download</button></a>
+  </h1>
+    <table class="table table-striped">
+        <thead>
+            <!-- batch,studentname, email, college,status, dsa,webD, react , action -->
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Batch</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">College</th>
+            <th scope="col">DSA</th>
+            <th scope="col">WebD</th>
+            <th scope="col">React</th>
+            <th scope="col">Status</th>
+            <th scope="col">Schedule
+              <br> Interview</th>
+            <th scope="col">Change-Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%
+            studentData.forEach((student,index)=>{
+              index++
+            %>
+          <tr>
+            <th scope="row"><%=index%></th>
+            <td><%=student.batch%></td>
+            <td><%=student.name%></td>
+            <td><%=student.email%></td>
+            <td><%=student.college%></td>
+            <td><%=student.dsa%></td>
+            <td><%=student.webd%></td>
+            <td><%=student.react%></td>
+            <td><%=student.status%></td>
+            <td>
+              </div>
+                <a style="text-decoration: none;" href="/addinterview/<%=student._id%>"><button type="button" class="btn btn-outline-primary btn-md btn-block">Schedule</button></a>
+              </div></td>
+            <td>
+              </div>
+                <a style="text-decoration: none;" href="/student/status/<%=student._id%>"><button type="button" class="btn btn-outline-warning btn-block">Update Status</button></a>
+              </div>
+            </td>
+          </tr>
+          <%})%>
+        
+        </tbody>
+      </table>
+    </div>
+</div>

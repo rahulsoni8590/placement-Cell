@@ -1,0 +1,47 @@
+    <!-- /newjob --> 
+    <h1 class="text-center text-danger ">Add new Student</h1>
+    <div class="container col-6 border border-primary mt-3 d-block">
+    <form action="/addstudent" method="post">
+        <!-- // batch,studentname, email, college,status, dsa,webd, react , action -->
+
+        <div class="form-row">
+            <div class="form-group col-md-6 m-2">
+                <input type="number" class="form-control" id="batch" name="batch" placeholder="Enter Batch">
+              </div>
+
+          <div class="form-group col-md-6 m-2">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
+          </div>
+
+          <div class="form-group col-md-6 m-2">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Enter email">
+          </div>
+
+          <div class="form-group col-md-6 m-2">
+            <input type="text" class="form-control" id="college" name="college" placeholder="Enter college Name">
+          </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6 m-2">
+                <input type="number" class="form-control" id="dsa" name="dsa" placeholder="Enter DSA Score">
+              </div>
+            <div class="form-group col-md-6 m-2">
+                <input type="number" class="form-control" id="webd" name="webd" placeholder="Enter webd Score">
+              </div>
+            <div class="form-group col-md-6 m-2">
+                <input type="number" class="form-control" id="react" name="react" placeholder="Enter React Score">
+            </div>
+          </div>
+          
+
+          <div class="form-group col-md-6 m-2 form-select-md">
+            <select class="custom-select multiple" aria-label="multiple select example" name="status">
+                <option selected>Select the Status</option>
+                <option value="not_placed">Not Placed</option>
+                <option value="placed">Placed</option>
+              </select>
+        </div>
+        <button type="submit" class="btn btn-primary m-2">Submit</button>
+      </form>
+    </div>

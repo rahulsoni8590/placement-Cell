@@ -1,0 +1,12 @@
+<div style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #0B0A21;">
+    <main style="height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 style="font-size: 50px; color: #fff; text-align: center;">Welcome to Placement Cell Web Application</h1>
+        <%if(log){%>
+        <h3 style="font-size: 50px; color: red; text-align: center;">Please Register to continue</h3>
+        <marquee class="col-6" behavior="slide" direction=""><small class="text-white">If already registered, then Signin to continue</small></marquee>
+        <div class="auth-buttons" style="margin-top: 20px; text-align: center;">
+            <a href="/signup"><button style="padding: 8px 16px; margin: 0 5px; background-color: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;">SignUp</button></a>
+            <a href="/signin"><button style="padding: 8px 16px; margin: 0 5px; background-color: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Signin</button></a>
+        </div>
+        <%}%>
+      </div>
